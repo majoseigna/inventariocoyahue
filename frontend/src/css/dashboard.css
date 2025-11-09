@@ -1,0 +1,74 @@
+/*
+ * src/css/dashboard.css
+ * Estilos específicos para index.html (Dashboard)
+ */
+
+/* Tarjetas de Estadísticas (Mockup Pág. 4) */
+.stat-card {
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.stat-card .card-body {
+    padding: 1.25rem;
+}
+
+.stat-card .stat-icon {
+    font-size: 3rem;
+    opacity: 0.8;
+}
+
+.stat-card h3 {
+    font-size: 2.25rem;
+    text-align: right;
+}
+
+.stat-card .stat-label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-align: right;
+    display: block;
+    opacity: 0.9;
+}
+
+/* Colores de las tarjetas (basados en mockup Pág. 4) */
+.stat-card-activos {
+    background-color: #0d6efd; /* Azul de Bootstrap */
+}
+.stat-card-mantencion {
+    background-color: #ffc107; /* Amarillo de Bootstrap */
+}
+.stat-card-alertas {
+    background-color: #dc3545; /* Rojo de Bootstrap */
+}
+.stat-card-bajas {
+    background-color: #6c757d; /* Gris de Bootstrap */
+}
+
+
+/* Feed de Últimos Movimientos (Mockup Pág. 4) */
+.activity-feed {
+    padding: 0;
+}
+.activity-feed .list-group-item {
+    border: 0;
+    border-bottom: 1px solid #eee;
+    padding-left: 0;
+    padding-right: 0;
+}
+.activity-feed .list-group-item:last-child {
+    border-bottom: 0;
+}
+
+.activity-feed i {
+    width: 25px;
+    text-align: center;
+    margin-right: 10px;
+}

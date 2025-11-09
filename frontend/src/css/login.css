@@ -1,0 +1,90 @@
+/* ===============================
+   LOGIN - INVENTARIO COYAHUE
+   =============================== */
+
+body {
+  background-color: #f8f9fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Logo de la barra */
+.logo-navbar {
+  max-height: 80px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Contenedor principal */
+.login-container {
+  height: calc(100vh - 80px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Tarjeta central */
+.login-card {
+  background: #fff;
+  border-radius: 12px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.6s ease;
+}
+
+/* Título */
+h4 {
+  color: #002a4d;
+}
+
+/* Campos del formulario */
+.form-label {
+  color: #333;
+}
+
+.form-control {
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  transition: 0.2s;
+}
+
+.form-control:focus {
+  border-color: #002a4d;
+  box-shadow: 0 0 5px rgba(0, 42, 77, 0.3);
+}
+
+/* Botón */
+.btn-primary {
+  background-color: #002a4d;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: #004070;
+  transform: scale(1.02);
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsivo */
+@media (max-width: 576px) {
+  .login-card {
+    margin: 0 20px;
+    padding: 30px 20px;
+  }
+
+  .logo-navbar {
+    max-height: 65px;
+  }
+}
